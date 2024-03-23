@@ -190,6 +190,9 @@ a:hover svg {
 a:active {
   transform: scale(0.95);
 }
+#el-1{
+  display: flex;
+}
 #el-2{
     display: none;
 }
@@ -228,19 +231,15 @@ a:active {
     <script>
   
 function alternarElemento() {
-  const elemento1 = document.getAnimations("#el-1");
-  const elemento2 = document.getElementById("#el-2");
+  const elemento1 = document.getElementById("el-1");
+  const elemento2 = document.getElementById("el-2");
 
-  if (elemento1.style.display === "flex") {
+
     elemento1.style.display = "none";
     elemento2.style.display = "flex";
-  } else {
-    elemento1.style.display = "flex";
-    elemento2.style.display = "none";
-  }
+  
 }
 
-// Executa a função após 2 segundos
 setTimeout(alternarElemento, 2000);
 </script>
 
