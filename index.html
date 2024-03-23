@@ -226,7 +226,8 @@ a:active {
         </svg>
     </a>
     <script>
-     function alternarElemento(id) {
+  
+function alternarElemento() {
   const elemento1 = document.querySelector("#el-1");
   const elemento2 = document.querySelector("#el-2");
 
@@ -239,8 +240,10 @@ a:active {
   }
 }
 
-setTimeout(alternarElemento, 2000); // Alterna a cada 2 segundos
+// Executa a função após 2 segundos
+setTimeout(alternarElemento, 2000);
+</script>
 
-    </script>
+    
 </body>
 </html>
